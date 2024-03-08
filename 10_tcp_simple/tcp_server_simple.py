@@ -20,12 +20,13 @@ if __name__ == '__main__':
     print(f"Please connect to {IP_ADDR}:{TCP_PORT}")
     r_socket, r_addr = l_socket.accept()  # blocks till connected
     print(f"Connection established from address: {r_addr}")
+    # now we're connected to a client
 
     # Read data from connection into byte array...
     data_received = r_socket.recv(1000)  # read max n=1000 bytes
     if not data_received:
         print("*** connection broken ***")
     print(f'Received {len(data_received)} bytes of data')
-    print(f'Received data: \"{data_received.decode()}\"')
+    print(f'Received data: "{data_received.decode()}"')
 
     l_socket.close()
