@@ -18,11 +18,11 @@ if __name__ == '__main__':
     l_socket.listen()  # now the socket exists but server is not yet accepting connections
 
     print(f"Please connect to {IP_ADDR}:{TCP_PORT}")
-    conn, r_addr = l_socket.accept()  # blocks till connected
+    r_socket, r_addr = l_socket.accept()  # blocks till connected
     print(f"Connection established from address: {r_addr}")
 
     # Read data from connection into byte array...
-    data_received = conn.recv(1000)  # read max n=1000 bytes
+    data_received = r_socket.recv(1000)  # read max n=1000 bytes
     if not data_received:
         print("*** connection broken ***")
     print(f'Received {len(data_received)} bytes of data')
