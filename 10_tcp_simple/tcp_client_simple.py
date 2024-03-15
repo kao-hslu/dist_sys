@@ -24,6 +24,8 @@ if __name__ == '__main__':
     # now we're connected to the server
     print("Now connected! Sending a message...")
 
+    input("Press [Enter] to continue...")
+
     # Send data to remote socket...
     bytes_sent = l_socket.send("Hello Server!".encode())
     print(f'Done: sent {bytes_sent}  bytes')

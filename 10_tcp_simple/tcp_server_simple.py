@@ -22,6 +22,8 @@ if __name__ == '__main__':
     print(f"Connection established from address: {r_addr}")
     # now we're connected to a client
 
+    input("Press [Enter] to continue...")
+
     # Read data from connection into byte array...
     data_received = r_socket.recv(1000)  # read max n=1000 bytes
     if not data_received:
