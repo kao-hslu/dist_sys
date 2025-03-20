@@ -1,5 +1,8 @@
-# distsys_24fs
+# Modul DIST_SYS
 Dateien für den Kommunikations-Grundlagen-Teil von DIST_SYS
 
 Um das Repository zu clonen:
-> git clone https://gitlab.enterpriselab.ch/okasten/DIST_SYS.git
+- CLI
+  > git clone git@github.com:kao-hslu/dist_sys.git
+- Browser
+  > https://github.com/kao-hslu/dist_sys
